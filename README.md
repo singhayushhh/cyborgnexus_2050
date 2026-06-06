@@ -20,7 +20,6 @@ This project is inspired by the spirit of innovation, technology, and futuristic
 
 ## Project Vision
 CyberNexus 2050 aims to imagine a world where artificial intelligence, robotics, and human intelligence merge to unlock new possibilities for humanity.
-#open https://github.com/singhayushhh/cyborgnexus_2050 to see result.
 
 ## Acknowledgement
 Inspired by Techfest IIT Bombay.
