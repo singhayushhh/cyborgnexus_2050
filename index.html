@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberNexus 2050</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Orbitron',sans-serif;
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 25%),
+radial-gradient(circle at 80% 30%,rgba(140,0,255,.15),transparent 25%);
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#00ffff;
+text-shadow:0 0 15px #00ffff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ffff;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:5rem;
+color:#00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+
+.hero h2{
+font-size:1.6rem;
+margin-top:15px;
+color:#d3d3d3;
+}
+
+.hero p{
+max-width:800px;
+margin-top:25px;
+line-height:1.8;
+color:#cfcfcf;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+border:2px solid #00ffff;
+color:#00ffff;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#00ffff;
+color:black;
+box-shadow:0 0 25px #00ffff;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+color:#00ffff;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border:1px solid rgba(0,255,255,.2);
+border-radius:20px;
+backdrop-filter:blur(8px);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+border:1px solid rgba(0,255,255,.15);
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(0,255,255,.3);
+}
+
+.feature h3{
+color:#00ffff;
+margin-bottom:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.stat{
+padding:30px;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+}
+
+.stat h2{
+font-size:3rem;
+color:#00ffff;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:#02030a;
+border-top:1px solid rgba(0,255,255,.15);
+}
+
+.highlight{
+color:#00ffff;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">CyberNexus 2050</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#tech">Technology</a></li>
+<li><a href="#stats">Stats</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<h1>CYBERNEXUS 2050</h1>
+
+<h2>Where Human Intelligence Meets Machine Precision</h2>
+
+<p>
+CyberNexus 2050 is a fictional next-generation cyborg initiative designed
+to bridge the gap between humans and intelligent machines. By combining
+advanced robotics, AI, neural interfaces and adaptive learning systems,
+CyberNexus aims to redefine the future of human potential.
+</p>
+
+<a href="#about" class="btn">Explore Project</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About CyberNexus</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>Vision</h3>
+<br>
+<p>
+To create a world where humans and intelligent machines work together
+seamlessly, enhancing productivity, creativity and problem solving.
+</p>
+</div>
+
+<div class="card">
+<h3>Mission</h3>
+<br>
+<p>
+Develop advanced cybernetic systems that empower individuals through
+neural connectivity, adaptive intelligence and sustainable technology.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="section-title">Core Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Neural Interface</h3>
+<p>Direct communication between human cognition and AI systems.</p>
+</div>
+
+<div class="feature">
+<h3>AI Assistant</h3>
+<p>Built-in intelligence for decision making and task optimization.</p>
+</div>
+
+<div class="feature">
+<h3>Advanced Sensors</h3>
+<p>360° environmental awareness with real-time analysis.</p>
+</div>
+
+<div class="feature">
+<h3>Regenerative System</h3>
+<p>Self-monitoring architecture designed for durability.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="tech">
+
+<h2 class="section-title">Technology Overview</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Artificial Intelligence</h3>
+<p>Deep learning systems capable of adaptive behavior.</p>
+</div>
+
+<div class="feature">
+<h3>Robotics</h3>
+<p>Precision engineering for enhanced human-machine interaction.</p>
+</div>
+
+<div class="feature">
+<h3>Nanotechnology</h3>
+<p>Microscopic enhancements for efficiency and resilience.</p>
+</div>
+
+<div class="feature">
+<h3>Biometric Sync</h3>
+<p>Secure integration with human biological systems.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2 class="section-title">Project Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>95%</h2>
+<p>Efficiency Rating</p>
+</div>
+
+<div class="stat">
+<h2>12+</h2>
+<p>Core Modules</p>
+</div>
+
+<div class="stat">
+<h2>2.5x</h2>
+<p>Enhanced Human Potential</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Safety Protocol Compliance</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Inspiration</h2>
+
+<div class="card" style="text-align:center;">
+<p>
+CyberNexus 2050 is a fictional concept inspired by the spirit of innovation,
+technology and futuristic thinking showcased by Techfest IIT Bombay.
+</p>
+<br>
+<p class="highlight">
+Follow Techfest IIT Bombay on Instagram: @techfest_iitbombay
+</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>CyberNexus 2050</h3>
+<br>
+<p>
+Building the future where humans and intelligent machines evolve together.
+</p>
+
+<br>
+
+<p class="highlight">
+Inspired by Techfest IIT Bombay
+</p>
+
+</footer>
+
+</body>
+</html>
